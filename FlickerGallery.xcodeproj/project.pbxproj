@@ -25,6 +25,13 @@
 		848DEF19280EF1E500C6A89C /* Presenterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEF18280EF1E500C6A89C /* Presenterable.swift */; };
 		848DEF1B280EF23A00C6A89C /* Routerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEF1A280EF23A00C6A89C /* Routerable.swift */; };
 		848DEF1D280EF25E00C6A89C /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEF1C280EF25E00C6A89C /* Viewable.swift */; };
+		848DEF21280EF2D200C6A89C /* ImageSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEF20280EF2D200C6A89C /* ImageSearchInteractor.swift */; };
+		848DEF23280EF2F700C6A89C /* ImageSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEF22280EF2F700C6A89C /* ImageSearchPresenter.swift */; };
+		848DEF25280EF34900C6A89C /* SearchRouterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEF24280EF34900C6A89C /* SearchRouterOutput.swift */; };
+		848DEF27280EF36D00C6A89C /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEF26280EF36D00C6A89C /* ImageSearchViewController.swift */; };
+		848DEF2A280EF3A000C6A89C /* SearchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEF29280EF3A000C6A89C /* SearchTableViewDataSource.swift */; };
+		848DEF2C280EF3F300C6A89C /* ImageSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEF2B280EF3F300C6A89C /* ImageSearchTableViewCell.swift */; };
+		848DEF2E280EF40D00C6A89C /* PhotoRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DEF2D280EF40D00C6A89C /* PhotoRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +74,13 @@
 		848DEF18280EF1E500C6A89C /* Presenterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenterable.swift; sourceTree = "<group>"; };
 		848DEF1A280EF23A00C6A89C /* Routerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routerable.swift; sourceTree = "<group>"; };
 		848DEF1C280EF25E00C6A89C /* Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
+		848DEF20280EF2D200C6A89C /* ImageSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchInteractor.swift; sourceTree = "<group>"; };
+		848DEF22280EF2F700C6A89C /* ImageSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchPresenter.swift; sourceTree = "<group>"; };
+		848DEF24280EF34900C6A89C /* SearchRouterOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouterOutput.swift; sourceTree = "<group>"; };
+		848DEF26280EF36D00C6A89C /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
+		848DEF29280EF3A000C6A89C /* SearchTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewDataSource.swift; sourceTree = "<group>"; };
+		848DEF2B280EF3F300C6A89C /* ImageSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchTableViewCell.swift; sourceTree = "<group>"; };
+		848DEF2D280EF40D00C6A89C /* PhotoRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +131,7 @@
 		848DEED2280EEE3D00C6A89C /* FlickerGallery */ = {
 			isa = PBXGroup;
 			children = (
+				848DEF1E280EF28D00C6A89C /* Modules */,
 				848DEF11280EF0ED00C6A89C /* Utility */,
 				848DEF07280EEF7E00C6A89C /* Apis */,
 				848DEED3280EEE3D00C6A89C /* AppDelegate.swift */,
@@ -176,6 +191,28 @@
 				848DEF1C280EF25E00C6A89C /* Viewable.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		848DEF1E280EF28D00C6A89C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				848DEF1F280EF2C000C6A89C /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		848DEF1F280EF2C000C6A89C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				848DEF20280EF2D200C6A89C /* ImageSearchInteractor.swift */,
+				848DEF22280EF2F700C6A89C /* ImageSearchPresenter.swift */,
+				848DEF24280EF34900C6A89C /* SearchRouterOutput.swift */,
+				848DEF26280EF36D00C6A89C /* ImageSearchViewController.swift */,
+				848DEF29280EF3A000C6A89C /* SearchTableViewDataSource.swift */,
+				848DEF2B280EF3F300C6A89C /* ImageSearchTableViewCell.swift */,
+				848DEF2D280EF40D00C6A89C /* PhotoRecord.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,15 +347,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				848DEF17280EF19700C6A89C /* Collection.swift in Sources */,
+				848DEF2C280EF3F300C6A89C /* ImageSearchTableViewCell.swift in Sources */,
 				848DEF1B280EF23A00C6A89C /* Routerable.swift in Sources */,
+				848DEF27280EF36D00C6A89C /* ImageSearchViewController.swift in Sources */,
 				848DEF0B280EEFFA00C6A89C /* SearchHubApi.swift in Sources */,
 				848DEED4280EEE3D00C6A89C /* AppDelegate.swift in Sources */,
 				848DEF1D280EF25E00C6A89C /* Viewable.swift in Sources */,
 				848DEF13280EF14300C6A89C /* TableViewItemDataSource.swift in Sources */,
 				848DEF19280EF1E500C6A89C /* Presenterable.swift in Sources */,
+				848DEF21280EF2D200C6A89C /* ImageSearchInteractor.swift in Sources */,
 				848DEED6280EEE3D00C6A89C /* SceneDelegate.swift in Sources */,
+				848DEF25280EF34900C6A89C /* SearchRouterOutput.swift in Sources */,
 				848DEF10280EF06400C6A89C /* PhotoSearchResponce.swift in Sources */,
+				848DEF2E280EF40D00C6A89C /* PhotoRecord.swift in Sources */,
+				848DEF23280EF2F700C6A89C /* ImageSearchPresenter.swift in Sources */,
 				848DEF09280EEFC500C6A89C /* ApiError.swift in Sources */,
+				848DEF2A280EF3A000C6A89C /* SearchTableViewDataSource.swift in Sources */,
 				848DEF15280EF17A00C6A89C /* Interactorable.swift in Sources */,
 				848DEF0D280EF01F00C6A89C /* ApiTask.swift in Sources */,
 			);
